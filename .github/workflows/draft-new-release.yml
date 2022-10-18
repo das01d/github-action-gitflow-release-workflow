@@ -36,6 +36,6 @@ jobs:
   
       - name: Create pull request - v2
         uses: peter-evans/create-pull-request@v4
-        branch: release/${{ github.event.inputs.version
+        branch: release/${{ github.event.inputs.version }}
         base: master
         commit-message: Prepare release ${{ github.event.inputs.version }}
